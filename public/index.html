@@ -7,139 +7,17 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="assets/css/style.css"/>
-  <!-- <style>
-    /* Add custom styles here */
-    .sidebar {
-      background-color: #000;
-      color: #fff;
-      height: auto;
-    }
-    .sidebar-heading {
-      padding: 10px;
-    }
-    .nav-link {
-      color: #fff;
-    }
-    .nav-link:hover {
-      color: #ccc;
-    }
-    .sidebar .nav-item:not(:last-child) {
-      margin-bottom: 10px;
-    }
-    .sidebar .nav-divider {
-      border-top: 1px solid #ccc;
-      margin: 10px 0;
-    }
-    .user-profile {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-    }
-    .user-profile .user-avatar {
-      width: 40px;
-      height: 40px;
-      background-color: #ccc;
-      border-radius: 50%;
-      overflow: hidden;
-    }
-    .user-profile .user-avatar img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .user-name {
-      position: absolute;
-      top: 17px;
-      right: 60px;
-    }
-    .overview {
-      position: absolute;
-      top: 17px;
-      right: 1250px;
-      font-size: 20px;
-    }
-    .card-subtitle {
-      font-size: 60px; /* Increase subtitle size */
-    }
-    .card-title {
-      color: rgb(180, 178, 178);
-      font-size: 15px;
-    }
+ 
 
-    /* Row gap */
-    .row-gap {
-      margin-bottom: 20px;
-    }
 
-    /* Add rounded corners to all boxes */
-    .box, .side-box, .main-container, .half-container {
-      background-color: white; /* Change to white */
-      border: 1px solid #ccc;
-      /* padding: 10px; */
-      border-radius: 10px; /* Rounded corners */
+  <style>
+    #unresolved-value {
+      color: black;
     }
-    .side-box {
-      height: 80px;
-      display: flex;
-      align-items: center; /* Center vertically */
-      justify-content: center; /* Center horizontally */
-    }
-
-    .side-box div {
-      /* Added styles */
-      text-align: center;
-      width: 100%;
-    }
-
-    .subtitle-wrapper {
-  text-align: center; /* Center text horizontally */
-}
-
-    /* Adjust spacing */
-    .main-container {
-      margin-right: 0; /* Remove margin */
-    }
-
-    .subtitle {
-    font-size: 25px; /* Adjust size as needed */
-    font-family: Arial, sans-serif; /* Adjust font family as needed */
-    color: #333; /* Adjust color as needed */
-    font-weight: bold;
-    }
-
-    .hide-text {
-      visibility: hidden; /* Hide the "Hide text" while keeping its space */
-    }
-    
-    .custom-control-input:checked ~ .custom-control-label::before {
-      background-color: #007bff;
-      border-color: #007bff;
-      border-radius: 50%; /* Makes it round */
-    }
-    .custom-control-input:checked ~ .custom-control-label::after {
-      color: #fff;
-      content: "\2713"; /* Unicode checkmark character */
-    }
-    .custom-control-label::before {
-      border-radius: 50%; /* Create a circular shape */
-    }
-
-    .custom-checkbox input[type="checkbox"]:checked + .checkmark:after {
-      content: "\002B"; /* Plus sign HTML entity */
-      position: absolute;
-      display: block;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 14px; /* Adjust size as needed */
-    }
-
-    .view-all-blue {
-  color: rgb(74, 74, 244);
-}
+  </style>
 
     
-  </style> -->
+ 
 </head>
 <body>
 
@@ -149,8 +27,13 @@
     <div class="row">
       <nav class="col-md-2 d-none d-md-block bg-dark sidebar">
         <div class="sidebar-sticky">
-          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-light">
-            
+
+                    
+
+
+
+
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-light">            
           </h6>
           <ul class="nav flex-column">
             <li class="nav-item">
@@ -187,15 +70,34 @@
 
         <!-- NEW USER -->
 
+        <!-- test -->
+        <nav>
+          <ul id="listId">
+            <li>
+              
 
-          <div class="content flex-grow-1 p-3"> 
-            <div class="d-flex justify-content-between align-items-center mb-3">   
-                <h4>Overview</h4>
-                <div class="user-profile">
-                    Keith Lun <img src="assets/images/aboutmeimagekeith2.jpg" alt="User Icon" class="profile-image">
+          
+          
+              <div class="content flex-grow-1 p-3"> 
+                <div class="d-flex justify-content-between align-items-center mb-3">   
+                    <h4 id="overview-title "></h4>
+                    <!-- Overview -->
+          <div class="col-md-4 overview">
+            <span class="text-light overview-title"></span>
+          </div>
+
+          <!-- User Name -->
+          <div class="col-md-6 user-name">
+            <span class="text-body-secondary user-name-value"></span>
+          </div>
+                    <div class="user-profile">
+                        <span id="user-name"></span>
+                        <img src="assets/images/aboutmeimagekeith2.jpg" alt="User Icon" class="profile-image">
+                    </div>
                 </div>
-            </div>
-        </div>
+              </div>
+
+              
         
 
         <!-- Your content goes here -->
@@ -203,56 +105,51 @@
           <div class="container">
             
             <!-- First row -->
-            <!-- <div class="row">
-              <div class="col-md-3">
-                <div class="card rounded" style="width: 15rem;"> -->
                   <div class="row">
                     <div class="col-md-3">
                       <div class="card rounded" style="width: 100%;">
+                        <div class="card-body">
+                          <h5 class="card-title" id="unresolved-title"></h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary" id="unresolved-value"></h6>
+              
+                  </div>
+                </div>
+              </div>
 
+          
+  
+              <div class="col-md-3">
+                <div class="card rounded" style="width: 100%;">
                   <div class="card-body">
-                    <h5 class="card-title">Unresolved</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">60</h6>
+                    <h5 class="card-title" id="overdue-title"></h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary" id="overdue-value"></h6>
                   </div>
                 </div>
               </div>
   
-              <!-- <div class="col-md-3">
-                <div class="card rounded" style="width: 15rem;"> -->
-                  <div class="col-md-3">
-                    <div class="card rounded" style="width: 100%;">
-
-                  <div class="card-body">
-                    <h5 class="card-title">Overdue</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">16</h6>
-                  </div>
+              <div class="col-md-3">
+                <div class="card rounded" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title" id="open-title"></h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary" id="open-value"></h6>
+                    </div>
                 </div>
               </div>
   
-              <!-- <div class="col-md-3">
-                <div class="card rounded" style="width: 15rem;"> -->
-                  <div class="col-md-3">
-                    <div class="card rounded" style="width: 100%;">
-
-                  <div class="card-body">
-                    <h5 class="card-title">Open</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">43</h6>
-                  </div>
+              <div class="col-md-3">
+                <div class="card rounded" style="width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title" id="onhold-title"></h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary" id="onhold-value"></h6>
+                    </div>
                 </div>
               </div>
-  
-              <!-- <div class="col-md-3">
-                <div class="card rounded" style="width: 15rem;"> -->
-                  <div class="col-md-3">
-                    <div class="card rounded" style="width: 100%;">
 
-                  <div class="card-body">
-                    <h5 class="card-title">On hold</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">64</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
+<!-- test -->
+          </li>
+        </ul>
+      </nav>
+<!-- test end -->
 
             <!-- Row gap -->
             <div class="row row-gap"></div>
@@ -262,47 +159,44 @@
            
             <div class="d-flex mb-3 align-items-stretch">
               <div class="main-container flex-grow-1 mr-3 rounded" style="max-width: 70%; height: auto;">
-              <!-- <div class="main-container flex-grow-1 mr-3 rounded" style="max-width: 70%;">
-                <div class="chart-container" style="height: 200px;"> -->
-                <!-- Large Container Content with image -->
                 <img src="assets/images/chart.png" class="img-fluid rounded" alt="Large Container Image" style="max-width: 100%; height: auto;">
               
             </div>
             
               <div class="d-flex flex-column rounded" style="width: 300px;">
                 <!-- Five Boxes -->
-                <div class="side-box rounded mb-0">
+                <div class="side-box rounded mb-0" id="resolved-section">
                   <div class="subtitle-wrapper">
-                    <h5 class="card-title">Resolved</h5>
-                    <span class="subtitle">449</span>
+                    <h5 class="card-title" id="resolved-title"></h5>
+                    <span class="card-subtitle mb-2 text-body-secondary" id="resolved-value"></span>
                   </div>
                 </div>
             
                 <div class="side-box rounded mb-0">
                   <div class="subtitle-wrapper">
-                    <h5 class="card-title">Received</h5>
-                    <span class="subtitle">426</span>
+                    <h5 class="card-title" id="received-title"></h5>
+                    <span class="subtitle" id="received-value"></span>
                   </div>
                 </div>
             
                 <div class="side-box rounded mb-0">
                   <div class="subtitle-wrapper">
-                    <h5 class="card-title">Average first response time</h5>
-                    <span class="subtitle">33m</span>
+                    <h5 class="card-title" id="averagefirst-title"></h5>
+                    <span class="subtitle" id="averagefirst-value"></span>
                   </div>
                 </div>
             
                 <div class="side-box rounded mb-0">
                   <div class="subtitle-wrapper">
-                    <h5 class="card-title">Average response time</h5>
-                    <span class="subtitle">3h 8m</span>
+                    <h5 class="card-title" id="averageresponse-title"></h5>
+                    <span class="subtitle" id="averageresponse-value"></span>
                   </div>
                 </div>
             
                 <div class="side-box rounded mb-0">
                   <div class="subtitle-wrapper">
-                    <h5 class="card-title">Resolution within SLA</h5>
-                    <span class="subtitle">94%</span>
+                    <h5 class="card-title" id="resolution-title"></h5>
+                    <span class="subtitle" id="resolution-value"></span>
                   </div>
                 </div>
               </div>
@@ -315,32 +209,35 @@
                   <table class="table table-borderless">
                     <thead>
                       <tr>
-                        <th scope="col" class="text-left">Unresolved tickets
+                        <th scope="col" class="text-left">
+                          <!-- Text for unresolved tickets -->
+                          <h6 class="text-right view-all-black" id="unresolved-title"></h6>
+                          <!-- <span id="unresolved-title"></span> -->
                           <br>
-                          <small>Group: Support</small>
+                          <small id="caption"></small>
                         </th>
-                        <th scope="col" class="text-right view-all-blue">View details
+                        <th scope="col" class="text-right view-all-blue" id="view-details-header">
                           <br>
-                          <small class="hide-text">Hide text</small>
+                          <!-- <small class="hide-text">Hide text</small> -->
                         </th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td class="text-left" style="border-bottom: 1px solid #ccc;">Waiting on Feature Request</td>
-                        <td class="text-right" style="border-bottom: 1px solid #ccc;">4238</td>
+                        <td class="text-left" style="border-bottom: 1px solid #ccc;" id="waiting-feature-request-label"></td>
+                        <td class="text-right" style="border-bottom: 1px solid #ccc;" id="waiting-feature-request-value"></td>
                       </tr>
                       <tr>
-                        <td class="text-left" style="border-bottom: 1px solid #ccc;">Awaiting Customer Response</td>
-                        <td class="text-right" style="border-bottom: 1px solid #ccc;">1005</td>
+                        <td class="text-left" style="border-bottom: 1px solid #ccc;" id="awaiting-customer-label"></td>
+                        <td class="text-right" style="border-bottom: 1px solid #ccc;" id="awaiting-customer-value"></td>
                       </tr>
                       <tr>
-                        <td class="text-left" style="border-bottom: 1px solid #ccc;">Awaiting Developer Fix</td>
-                        <td class="text-right" style="border-bottom: 1px solid #ccc;">914</td>
+                        <td class="text-left" style="border-bottom: 1px solid #ccc;" id="awaiting-developer-label"></td>
+                        <td class="text-right" style="border-bottom: 1px solid #ccc;" id="awaiting-developer-value"></td>
                       </tr>
                       <tr>
-                        <td class="text-left">Pending</td>
-                        <td class="text-right">281</td>
+                        <td class="text-left" style="border-bottom: 1px solid #ccc;" id="pending-label"></td>
+                        <td class="text-right" style="border-bottom: 1px solid #ccc;" id="pending-value"></td>
                       </tr>
                       <!-- Add more rows as needed -->
                     </tbody>
@@ -364,6 +261,7 @@
                         <td class="text-right" style="border-bottom: 1px solid #ccc;"><i class="fas fa-plus"></i></td>
                       </tr>
                       <tr>
+
                         <td class="text-left">
                           <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="finishTicketUpdate">
@@ -407,59 +305,109 @@
           </div>
         </header>
         
-        <!-- New -->
-        <div class="row">
-
-        <!-- User profile -->
-        <!-- <div class="user-profile">
-          <div class="user-avatar">
-            <img src="assets/images/aboutmeimagekeith2.jpg" alt="User Avatar">
-          </div>
-        </div> -->
-
-        <!-- USERICON -->
-
-        <!-- <div class="col-md-2 user-profile">
-          <div class="user-avatar">
-            <img src="assets/images/aboutmeimagekeith2.jpg" alt="User Avatar">
-          </div>
-        </div> -->
        
-
-        <!-- Overview -->
-        <!-- <div class="overview">
-          <span class="text-light">Overview</span>
-        </div> -->
-
-        <!-- Overview -->
-        <div class="col-md-4 overview">
-          <span class="text-light">Overview</span>
-        </div>
-  
-        <!-- User name -->
-        <!-- <div class="user-name">
-          <span class="text-light">Keith Lun</span>
-        </div> -->
-
-        <!-- User Name -->
-      <div class="col-md-6 user-name">
-        <span class="text-light">Keith Lun</span>
-      </div>
-    </div>
   
         
       </main>
     </div>
   </div>
   
-  <!-- <footer class="footer bg-dark text-light text-center py-3">
-    <div class="container">
-      <span>&copy; 2024 Overview Website. All rights reserved.</span>
-    </div>
-  </footer> -->
-  
+  <script>
+    // Fetch JSON data
+    fetch("assets/data/content.json")
+      .then(response => response.json())
+      .then(data => {
+        console.log(data);
+        // Update HTML elements with JSON data
+        document.querySelector(".overview-title").textContent = data.siteName;
+        document.querySelector(".user-name-value").textContent = data.userName;
+
+        document.getElementById("unresolved-title").textContent = data.mainnav[0].text;
+        document.getElementById("unresolved-value").textContent = data.mainnav[0].value;
+        // You can similarly update other elements with appropriate data
+        document.getElementById("overdue-title").textContent = data.mainnav[1].text;
+        document.getElementById("overdue-value").textContent = data.mainnav[1].value;
+
+        document.getElementById("open-title").textContent = data.mainnav[2].text;
+        document.getElementById("open-value").textContent = data.mainnav[2].value;
+
+        document.getElementById("onhold-title").textContent = data.mainnav[3].text;
+        document.getElementById("onhold-value").textContent = data.mainnav[3].value;
+
+        // Populate additional data section
+        document.getElementById("resolved-title").textContent = data.mainnav[4].text;
+        document.getElementById("resolved-value").textContent = data.mainnav[4].value;
+
+        document.getElementById("received-title").textContent = data.mainnav[5].text;
+        document.getElementById("received-value").textContent = data.mainnav[5].value;
+
+        document.getElementById("averagefirst-title").textContent = data.mainnav[6].text;
+        document.getElementById("averagefirst-value").textContent = data.mainnav[6].value;
+
+        document.getElementById("averageresponse-title").textContent = data.mainnav[7].text;
+        document.getElementById("averageresponse-value").textContent = data.mainnav[7].value;
+
+        document.getElementById("resolution-title").textContent = data.mainnav[8].text;
+        document.getElementById("resolution-value").textContent = data.mainnav[8].value;
+
+        //Third Card
+        document.getElementById("unresolved-title").textContent = data.mainnav[9].text;
+        document.getElementById("caption").textContent = data.mainnav[9].caption;
+        document.getElementById("view-details-header").textContent = data.mainnav[9].value;
+        document.getElementById("unresolved-title").textContent = data.mainnav[9].hide;
+
+        document.getElementById("waiting-feature-request-label").textContent = data.mainnav[10].text;
+        document.getElementById("waiting-feature-request-value").textContent = data.mainnav[10].value;
+
+        document.getElementById("awaiting-customer-label").textContent = data.mainnav[11].text;
+        document.getElementById("awaiting-customer-value").textContent = data.mainnav[11].value;
+
+        document.getElementById("awaiting-developer-label").textContent = data.mainnav[12].text;
+        document.getElementById("awaiting-developer-value").textContent = data.mainnav[12].value;
+
+        document.getElementById("pending-label").textContent = data.mainnav[13].text;
+        document.getElementById("pending-value").textContent = data.mainnav[13].value;
+
+        //Fourth Card
+        document.getElementById("tasks").textContent = data.mainnav[14].text;
+        document.getElementById("tasks-caption").textContent = data.mainnav[14].caption;
+        document.getElementById("view-all-header").textContent = data.mainnav[14].value;
+
+        document.getElementById("create-new-task-label").textContent = data.mainnav[15].text;
+        document.getElementById("create-new-task-header").textContent = data.mainnav[15].value;
+
+        document.getElementById("finish-ticket-update-label").textContent = data.mainnav[17].text;
+
+       
+
+
+      // const additionalDataDiv = document.getElementById("additional-data");
+      // data.mainnav.slice(4).forEach(item => {
+      //   const itemDiv = document.createElement("div");
+      //   itemDiv.innerHTML = `<strong>${item.text}:</strong> ${item.value}<br>`;
+      //   additionalDataDiv.appendChild(itemDiv);
+      //   });
+      })
+      .catch(errors => console.log("errors: ", errors));
+</script>
+
+
+
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+  <!-- link to main.js -->
+  <script src="assets/js/main.js"></script>
+
   </body>
 </html>
+

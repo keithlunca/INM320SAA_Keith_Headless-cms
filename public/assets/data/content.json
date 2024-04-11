@@ -1,0 +1,123 @@
+{
+    "siteName": "Overview",
+    "userName": "Keith Lun",
+    "contactEmail": "klun@myseneca.ca",
+    "phone": "437-313-82991",
+    "mainnav": [
+      {
+        "text": "unresolved",
+        "value": "60",
+        "linkId": "",
+        "linkClass": "",
+        "newTab": false
+      },
+      {
+        "text": "Overdue",
+        "value": "16",
+        "linkId": "",
+        "linkClass": "",
+        "newTab": false
+      },
+      {
+        "text": "Open",
+        "value": "43",
+        "linkId": "",
+        "linkClass": "",
+        "newTab": false
+      },
+      {
+        "text": "On hold",
+        "value": "64",
+        "linkId": "",
+        "linkClass": "",
+        "newTab": false
+      },
+      {
+        "text": "Resolved",
+        "value": "449",
+        "linkId": "",
+        "linkClass": "",
+        "newTab": false
+      },
+      {
+        "text": "Received",
+        "value": "426",
+        "linkId": "",
+        "linkClass": "",
+        "newTab": false
+      },
+      {
+        "text": "Average first response time",
+        "value": "33m",
+        "linkId": "",
+        "linkClass": "",
+        "newTab": false
+      },
+      {
+        "text": "Average response time",
+        "value": "3h 8m",
+        "linkId": "",
+        "linkClass": "",
+        "newTab": false
+      },
+      {
+        "text": "Resolution within SLA",
+        "value": "94%",
+        "linkId": "",
+        "linkClass": "",
+        "newTab": false
+      },
+      {
+        "text": "Unresolved tickets",
+        "value": "View details",
+        "caption": "Group: Support",
+        "linkClass": "View details",
+        "hide": "Hide text",
+        "newTab": false
+      },
+      {
+        "text": "Waiting on Feature Request",
+        "value": "4238",
+        "newTab": false
+      },
+      {
+        "text": "Awaiting Customer Response",
+        "value": "1005",
+        "newTab": false
+      },
+      {
+        "text": "Awaiting Developer Fix",
+        "value": "914",
+        "newTab": false
+      },
+      {
+        "text": "Pending",
+        "value": "281",
+        "newTab": false
+      },
+      {
+        "text": "Task",
+        "linkClass": "View details",
+        "caption": "Today",
+        "newTab": false
+      },
+      {
+        "text": "Create new task",
+        "newTab": false
+      },
+      {
+        "text": "Finish ticket update",
+        "newTab": false
+      },
+      {
+        "text": "Create new ticket example",
+        "newTab": false
+      },
+      {
+        "text": "Update ticket report",
+        "newTab": false
+      }
+      
+
+    ]
+  }

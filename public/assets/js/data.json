@@ -1,0 +1,25 @@
+{
+    "info_cards": [
+      {
+        "title": "Info Card 1",
+        "subtitle": "Subtitle 1",
+        "content": "Content for info card 1."
+      },
+      {
+        "title": "Info Card 2",
+        "subtitle": "Subtitle 2",
+        "content": "Content for info card 2."
+      }
+    ],
+    "stats": {
+      "unresolved": "60",
+      "overdue": "16",
+      "open": "43",
+      "on_hold": "64",
+      "resolved": "449",
+      "received": "426",
+      "average_first_response_time": "33m",
+      "average_response_time": "3h 8m",
+      "resolution_within_sla": "94%"
+    }
+  }
